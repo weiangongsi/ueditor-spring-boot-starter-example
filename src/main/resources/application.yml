@@ -1,0 +1,12 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+ue:
+  config-file: static/ueditor/jsp/config.json #resources目录下配置文件的位置
+  server-url: /ueditor.do #服务器统一请求接口路径
+  url-prefix: /file

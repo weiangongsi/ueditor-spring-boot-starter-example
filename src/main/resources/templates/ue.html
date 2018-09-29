@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="UTF-8" xmlns:th="http://www.springframework.org/schema/jdbc">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ueditor</title>
+    <style>
+        #editor {
+            width: 1024px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<div id="editor" type="text/plain"></div>
+<script th:src="@{/ueditor/ueditor.config.js}"></script>
+<script th:src="@{/ueditor/ueditor.all.min.js}"></script>
+<script th:src="@{/ueditor/lang/zh-cn/zh-cn.js}"></script>
+<script>
+    UE.getEditor('editor');
+</script>
+</body>
+</html>
