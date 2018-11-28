@@ -36,7 +36,7 @@
         <dependency>
             <groupId>com.dcssn</groupId>
             <artifactId>ueditor-spring-boot-starter</artifactId>
-            <version>0.0.2</version>
+            <version>0.1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>

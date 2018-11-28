@@ -25,7 +25,7 @@ public class UeditorSpringBootStarterExampleApplication {
         logger.info("http://localhost:" + port);
     }
 
-    @GetMapping("/")
+    @GetMapping("/ue")
     public String index() {
         return "ue";
     }
