@@ -7,7 +7,7 @@ import com.baidu.ueditor.define.MultiState;
 import com.baidu.ueditor.define.State;
 import com.baidu.ueditor.spring.EditorUploader;
 import org.apache.tomcat.util.codec.binary.Base64;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -23,7 +23,7 @@ import java.util.Map;
  * @author lihy
  * @version 2018/12/25
  */
-//@Service
+//@Component
 public class MyEditorUploader implements EditorUploader {
 
     @Override
