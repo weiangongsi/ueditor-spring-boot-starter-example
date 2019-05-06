@@ -1,13 +1,22 @@
 server:
   port: 80
   servlet:
-    context-path: / #与ueditor.config.js 中SERVER_CONTEXT_PATH 要统一
+    context-path: /aa #与ueditor.config.js 中SERVER_CONTEXT_PATH 要统一
 spring:
   servlet:
     multipart:
       max-file-size: 100MB
+  profiles:
+    include: dev
 ue:
   config-file: static/ueditor/jsp/config.json #resources目录下配置文件的位置
   server-url: /ueditor.do #服务器统一请求接口路径
-  url-prefix: /file/ #"/"结尾 自定义上传时字段无意义
-  physical-path: C:/upload/ #存储文件的绝对路径 必须使用标准路径"/"作为分隔符  自定义上传时字段无意义
+  local:
+    url-prefix: /file/ #"/"结尾 自定义上传时字段无意义
+    physical-path: C:/upload/ #存储文件的绝对路径 必须使用标准路径"/"作为分隔符  自定义上传时字段无意义
+  qiniu:
+    accessKey: ---
+    secretKey: ---
+    cdn: https://---
+    bucket: ---
+    zone: zone0

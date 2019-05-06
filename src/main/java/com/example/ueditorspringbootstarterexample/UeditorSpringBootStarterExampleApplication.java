@@ -1,5 +1,6 @@
 package com.example.ueditorspringbootstarterexample;
 
+import com.baidu.ueditor.spring.support.qiniu.EnableQiniuUploader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @Controller
+@EnableQiniuUploader
 public class UeditorSpringBootStarterExampleApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(UeditorSpringBootStarterExampleApplication.class);
