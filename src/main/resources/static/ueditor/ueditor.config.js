@@ -21,7 +21,7 @@
      */
     var URL = window.UEDITOR_HOME_URL || getUEBasePath();
 
-    var SERVER_CONTEXT_PATH="/aa";
+    var SERVER_CONTEXT_PATH="";
 
     /**
      * 配置项主体。注意，此处所有涉及到路径的配置别遗漏URL变量。

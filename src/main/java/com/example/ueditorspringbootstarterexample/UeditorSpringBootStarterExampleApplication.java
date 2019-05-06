@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @Controller
-@EnableQiniuUploader
+//@EnableQiniuUploader
 public class UeditorSpringBootStarterExampleApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(UeditorSpringBootStarterExampleApplication.class);
