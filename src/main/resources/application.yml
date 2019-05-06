@@ -1,7 +1,7 @@
 server:
   port: 80
   servlet:
-    context-path: /
+    context-path: / #与ueditor.config.js 中SERVER_CONTEXT_PATH 要统一
 spring:
   servlet:
     multipart:
