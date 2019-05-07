@@ -15,9 +15,9 @@ ue:
   local:
     url-prefix: /file/ #"/"结尾 自定义上传时字段无意义
     physical-path: C:/upload/ #存储文件的绝对路径 必须使用标准路径"/"作为分隔符  自定义上传时字段无意义
-  qiniu:
+  qiniu: #参数对应官方文档 https://developer.qiniu.com/kodo/sdk/1239/java
     accessKey: ---
     secretKey: ---
-    cdn: https://---
+    cdn: https://--- #融合 CDN 加速域名
     bucket: ---
     zone: zone0
