@@ -1,5 +1,5 @@
 # ueditor-spring-boot-starter
-#####支持上传到 本地、七牛云
+##### 支持上传到 本地、七牛云
 1. #### 文件导入<br>
    * 新建springboot项目
    * 不需要下载本项目，jar包已经上传到maven仓库
