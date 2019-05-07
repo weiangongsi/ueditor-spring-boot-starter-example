@@ -21,7 +21,26 @@
      */
     var URL = window.UEDITOR_HOME_URL || getUEBasePath();
 
-    var SERVER_CONTEXT_PATH="";
+    var SERVER_CONTEXT_PATH = getContextPath();
+
+    /**
+     * 获取程序的上下文路径
+     * @returns {string}
+     */
+    function getContextPath() {
+        var configFilePath = getConfigFilePath();
+        var selfPath = self.document.URL;
+        var configArray = configFilePath.split("");
+        var selfArray = selfPath.split("");
+        var index = 0;
+        for (var i = 0; i < selfArray.length; i++) {
+            if (selfArray[i] != (configArray[i])) {
+                index = i;
+                break;
+            }
+        }
+        return configFilePath.substring(0, index);
+    }
 
     /**
      * 配置项主体。注意，此处所有涉及到路径的配置别遗漏URL变量。

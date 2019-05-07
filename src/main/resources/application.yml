@@ -1,11 +1,12 @@
 server:
   port: 80
   servlet:
-    context-path: / #与ueditor.config.js 中SERVER_CONTEXT_PATH 要统一
+    context-path: /
 spring:
   servlet:
     multipart:
-      max-file-size: 100MB
+      max-file-size: 500MB
+      max-request-size: 500MB
   profiles:
     include: dev
 ue:
