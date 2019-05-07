@@ -118,5 +118,3 @@
          ```
 5. #### 参考百度文档
     [百度文档](http://fex.baidu.com/ueditor/)
-6. #### 项目案例
-   [https://github.com/weiangongsi/ueditor-spring-boot-starter-example](https://github.com/weiangongsi/ueditor-spring-boot-starter-example)
