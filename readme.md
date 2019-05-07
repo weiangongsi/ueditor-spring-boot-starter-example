@@ -16,7 +16,7 @@
    * jsp目录只保留 config.json 文件即可
    * 或者直接使用本项目中的文件
 
-    ####目录结构
+    #### 目录结构
     
         ├── resources                   
         │   ├── static
