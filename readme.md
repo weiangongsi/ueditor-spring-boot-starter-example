@@ -98,7 +98,7 @@
 4. #### 自定义上传
     * 1.当前服务自定义处理<br>
         实现com.baidu.ueditor.spring.EditorUploader接口，创建实现类的bean注入到spring容器中<br>
-        最后的案例中有实现的例子，实现类是 com.example.ueditorspringbootstarterexample.MyEditorUploader
+        案例中有实现的例子，实现类是 com.example.ueditorspringbootstarterexample.MyEditorUploader
     * 2.直传到远程服务器<br>
         [http://fex.baidu.com/ueditor/#qa-customurl](http://fex.baidu.com/ueditor/#qa-customurl)
         ```            
