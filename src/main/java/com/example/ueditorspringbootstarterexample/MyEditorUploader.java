@@ -5,9 +5,9 @@ import com.baidu.ueditor.define.AppInfo;
 import com.baidu.ueditor.define.BaseState;
 import com.baidu.ueditor.define.MultiState;
 import com.baidu.ueditor.define.State;
+import com.baidu.ueditor.hunter.ImageHunter;
 import com.baidu.ueditor.spring.EditorUploader;
 import org.apache.tomcat.util.codec.binary.Base64;
-import org.springframework.stereotype.Component;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -126,5 +126,16 @@ public class MyEditorUploader implements EditorUploader {
         // 总记录数
         multiState.putInfo("total", 1);
         return multiState;
+    }
+
+    /**
+     * 抓取远程图片配置
+     *
+     * @param list 图片列表
+     */
+    @Override
+    public State imageHunter(String[] list, Map<String, Object> conf) {
+        // 可以参考这个写
+        return new ImageHunter(conf).capture(list);
     }
 }
