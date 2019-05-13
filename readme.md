@@ -8,7 +8,7 @@
            <dependency>
                     <groupId>com.dcssn</groupId>
                     <artifactId>ueditor-spring-boot-starter</artifactId>
-                    <version>2.0.0</version>
+                    <version>2.0.1</version>
            </dependency>
       ```
    * 下载百度编辑器源码 链接：[最新版本1.4.3.3 Jsp UTF-8版本](https://ueditor.baidu.com/website/download.html)<br>
